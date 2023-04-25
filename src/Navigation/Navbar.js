@@ -3,6 +3,10 @@ import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import KitchenSinkExample from "./KitchenSink";
 
+import { getServices } from './list';
+let val = getServices(); 
+
+
 
 function BasicExample() {
   return (
@@ -33,22 +37,7 @@ function BasicExample() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Services</Accordion.Header>
         <Accordion.Body>
-          <ul className="fs-8">
-            <li>Wireless Installations & Site Surveys</li>
-            <li>Security Systems: Cameras, Surveillance, Video</li>
-            <li>Phone System Installations & Repair</li>
-            <li>Network Infrastructure Design and Consulting</li>
-            <li>Cable Testing, Documentation, and Certification</li>
-            <li>CAT5E/CAT6 Horizontal Ethernet Installations</li>
-            <li>Wiring Closet Installations, Upgrades and Troubleshooting</li>
-            <li>Speaker Installation and Maintenance</li>
-            <li>Tagging and Toning Cabling Identification</li>
-            <li>Grounding and Bonding</li>
-            <li>Fire Stopping</li>
-            <li>Fiber Optic Diagnostics and Troubleshooting</li>
-            <li>Fiber Optic Installations Singlemode and Multimode</li>
-            <li>Fiber Optic Fusion Splicing</li>
-          </ul>
+          <table id="services"></table>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
