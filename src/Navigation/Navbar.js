@@ -21,7 +21,7 @@ function BasicExample() {
           </div>
           </nav>
       </div>
-    <div className="fs-1 col-10" style={{background: 'grey', color: 'navy'}}>
+    <div className="fs-1 col-10" style={{background: 'grey', color: 'navy', fontFamily: 'Georgia'}}>
       <strong>S&L Cabling Solutions</strong>
     </div>
     </div>
