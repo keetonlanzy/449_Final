@@ -5,6 +5,10 @@ import KitchenSinkExample from "./KitchenSink";
 
 import { createClient } from '@supabase/supabase-js'
 
+import Api from "../quotes";
+
+
+
 const supabaseUrl = 'https://afzhzgaeufygfizasysm.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFmemh6Z2FldWZ5Z2ZpemFzeXNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc2MzA3OTUsImV4cCI6MTk5MzIwNjc5NX0.4BPg60lIeF2lM2CQ9ZfNnw0T5c1X86QP2KybKGUNgGI'
 const supabase = createClient(supabaseUrl, supabaseKey)
@@ -28,7 +32,7 @@ getServices()
 function BasicExample() {
   return (
 <div>
-  <div className="container text-center rounded-pill p-3 mb-5 mt-3" style={{background: 'grey'}}>
+  <div className="container text-center rounded-pill p-3 mb-3 mt-3" style={{background: 'grey'}}>
     <div className="row align-items-center">
       <div className="col-1">
           <nav className="navbar navbar-light bg-none">
@@ -47,7 +51,9 @@ function BasicExample() {
     </div>
     </div>
   </div>
-
+  <div className="row justify-content-center">
+    <Api />
+  </div>
 
     <div className="container px-4">
     <Accordion defaultActiveKey="0" alwaysOpen flush>
